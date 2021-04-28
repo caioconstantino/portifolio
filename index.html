@@ -304,18 +304,18 @@
                 $('form').ajaxSubmit({
                     
                     beforeSubmit:function(){
-                       // form.find('input[type=submit]').attr('disabled','true');
-                      //  form.find('input[type=submit]').animate({'opacity':'0.4'});
-                      //  form.find('input[type=submit]').css({'background-color':'black','color':'white'});
-                       // form.find('input[type=submit]').attr('value','carregando...');
+                       form.find('input[type=submit]').attr('disabled','true');
+                       form.find('input[type=submit]').animate({'opacity':'0.4'});
+                       form.find('input[type=submit]').css({'background-color':'black','color':'white'});
+                       form.find('input[type=submit]').attr('value','carregando...');
                     },
                     'success':function(){
                         alert('formulario foi enviado com sucesso');
-                      //  form.find('input[type=submit]').removeAttr('disabled');
-                      //  form.find('input[type=submit]').animate({'opacity':'1'});
-                      //  form.find('input[type=submit]').css({'background-color':'white','color':'black'});
-                      //  form.find('input[type=submit]').attr('value','Enviar!');
-                      //  form[0].reset();
+                        form.find('input[type=submit]').removeAttr('disabled');
+                        form.find('input[type=submit]').animate({'opacity':'1'});
+                        form.find('input[type=submit]').css({'background-color':'white','color':'black'});
+                        form.find('input[type=submit]').attr('value','Enviar!');
+                        form[0].reset();
                     }
             });
                 return false
